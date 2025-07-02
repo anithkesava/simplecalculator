@@ -1,5 +1,5 @@
 body{
-    overflow: auto;
+    overflow: hidden;
     background-color: bisque;
 }
 
@@ -14,12 +14,25 @@ body{
 
 .inputbox{
     position: relative;
-    height: 40%;
-    width: 100%;
-    border: 5px solid white;
+    height: 30%;
+    width: 90%;
+    border: 2px solid ;
+    background-color: lightgray;
     font-size: 40px;
     padding: 1%;
     border-radius: 12px;
+}
+.ouputbox{
+    position: relative;
+    height: 30%;
+    width: 90%;
+    border: 2px solid ;
+    background-color: lightgray;
+    font-size: 40px;
+    padding: 1%;
+    border-radius: 12px;
+    text-align: right;
+    padding-left: 1%;
 }
 .input-container{
  
@@ -38,14 +51,17 @@ body{
 .number-digit-container{
     position: relative;
     top: 10%;
+    left: 5%;
     height: 100%;
-    width: 100%;
+    width: 90%;
     background-color: chocolate;
     border-radius: 12px;
     border:none;
-    padding: 1%;
+    padding: 2%;
 }
 .digits-and-operators{
+    position: relative;
+    left: 2%;
     display: grid;
     grid-template-columns: repeat(4, auto);
     align-items: center;
@@ -56,15 +72,23 @@ body{
 }
 .numberdigit-btn{
     height: 80%;
-    width: 80%;
+    width: 70%;
     font-size: 20px;
     font-weight: bold;
     background-color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 2px;
     transition: 0.4s ease-in-out;
     cursor: pointer;
 }
 .numberdigit-btn:hover{
     box-shadow: 2px 4px 5px rgba(0, 0, 0);
+}
+strong{
+    color: blue;
+    text-decoration: underline;
+}
+footer{
+    position: relative;
+    left: 2%;
 }

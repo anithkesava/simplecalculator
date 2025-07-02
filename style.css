@@ -1,0 +1,70 @@
+body{
+    overflow: auto;
+    background-color: bisque;
+}
+
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    width: 70%;
+    margin: 2rem;
+    padding: 2rem;
+}
+
+.inputbox{
+    position: relative;
+    height: 40%;
+    width: 100%;
+    border: 5px solid white;
+    font-size: 40px;
+    padding: 1%;
+    border-radius: 12px;
+}
+.input-container{
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    position: relative;
+    left: 50%;
+    top: 5%;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 100%;
+}
+.number-digit-container{
+    position: relative;
+    top: 10%;
+    height: 100%;
+    width: 100%;
+    background-color: chocolate;
+    border-radius: 12px;
+    border:none;
+    padding: 1%;
+}
+.digits-and-operators{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    align-items: center;
+    gap: 20px 10px;
+    height: 100%;
+    width:100%;
+
+}
+.numberdigit-btn{
+    height: 80%;
+    width: 80%;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: white;
+    border: none;
+    border-radius: 8px;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+}
+.numberdigit-btn:hover{
+    box-shadow: 2px 4px 5px rgba(0, 0, 0);
+}

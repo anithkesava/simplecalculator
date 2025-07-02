@@ -1,12 +1,9 @@
 body{
-    overflow: hidden;
+    overflow-y: scroll;
+    overflow-x: hidden;
     background-color: bisque;
 }
-@media (max-width: 1080px){
-    body{
-        overflow: auto;
-    }
-}
+
 .mainContainer{
     display: flex;
     flex-direction: column;

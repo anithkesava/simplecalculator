@@ -2,12 +2,21 @@ body{
     overflow-y: scroll;
     overflow-x: hidden;
     background-color: bisque;
+    margin: 0;
+    padding: 0;
 }
-
+.dark-mode{
+    background-color: grey;
+  height: 100%;
+  width: 100%;
+}
+.dark-mode span{
+    color: white;
+}
 .mainContainer{
     display: flex;
     flex-direction: column;
-    height: 80%;
+    height: 60%;
     width: 70%;
     margin: 2rem;
     padding: 2rem;
@@ -16,17 +25,21 @@ body{
 .inputbox{
     position: relative;
     height: 30%;
-    width: 90%;
+    width: 50%;
     border: 2px solid ;
     background-color: lightgray;
     font-size: 40px;
     padding: 1%;
     border-radius: 12px;
 }
+.inputbox.active{
+    background-color: white;
+    border:none;
+}
 .ouputbox{
     position: relative;
     height: 30%;
-    width: 90%;
+    width: 50%;
     border: 2px solid ;
     background-color: lightgray;
     font-size: 40px;
@@ -34,6 +47,10 @@ body{
     border-radius: 12px;
     text-align: right;
     padding-left: 1%;
+}
+.ouputbox.active{
+    background-color: white;
+    border:none;
 }
 .input-container{
  
@@ -52,13 +69,16 @@ body{
 .number-digit-container{
     position: relative;
     top: 10%;
-    left: 5%;
+    left: 23%;
     height: 100%;
-    width: 90%;
+    width: 50%;
     background-color: chocolate;
     border-radius: 12px;
     border:none;
     padding: 2%;
+}
+.number-digit-container.active{
+    background-color: green;
 }
 .digits-and-operators{
     position: relative;
@@ -73,8 +93,8 @@ body{
 }
 .numberdigit-btn{
     height: 80%;
-    width: 70%;
-    font-size: 24px;
+    width: 50%;
+    font-size: 1rem;
     font-weight: bold;
     background-color: white;
     border: none;
@@ -84,7 +104,7 @@ body{
 }
 .numberdigit-btn:hover{
     box-shadow: 2px 4px 5px rgba(0, 0, 0);
-    font-size: 20px;
+  
 }
 strong{
     color: blue;
@@ -97,7 +117,60 @@ footer {
     font-size: 0.9rem;
     color: black;
     background-color: transparent;
-    margin-top: 2rem;
     position: relative;
+    top: 10px;
+    left:2%;
     clear: both;
+}
+.nav-bar{
+    position: relative;
+    z-index: 2;
+    height: 10%;
+    width: 100%;
+    background-color: chocolate;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.nav-bar.active{
+    background-color: green;
+}
+.span-alignment{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.toggle-btn{
+    position: relative;
+    right: 20px;
+    height: 1rem;
+    width: 4.5rem;
+    background-color: white;
+    padding: 2px;
+    border: none;
+    border-radius: 20px;        
+}
+.ball-btn{
+    position: relative;
+    top: -13px;
+    left:-2px;
+    height: 2.4rem;
+    width: 2.4rem;
+    border-radius: 50%;
+    background-color: wheat;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.ball-btn.active{
+    transform: translateX(2.5rem);
 }

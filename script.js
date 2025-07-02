@@ -31,5 +31,26 @@ document.addEventListener('DOMContentLoaded', () => {
         button.classList.add('numberdigit-btn');
         parent.appendChild(button) 
     })
-   
+
 });
+const togglebtn = document.getElementById('togglebtnId');
+const ball = document.getElementById('ballId');
+const input = document.getElementById('userinpt');
+const output = document.getElementById('answerinpt');
+const nav = document.getElementById('navId')
+const numdigit = document.getElementById('numberdigitcontainer');
+togglebtn.addEventListener('click', () => {
+    ball.classList.toggle('active');
+    document.body.classList.toggle('dark-mode');
+    input.classList.toggle('active')
+    output.classList.toggle('active')
+    nav.classList.toggle('active');
+    numdigit.classList.toggle('active');
+})
+
+
+
+
+
+
+

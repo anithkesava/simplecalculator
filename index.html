@@ -1,17 +1,27 @@
 <html>
   <head>
     <link rel="stylesheet" href="./style.css" />
-    <script src="./script.js"></script>
+    <script src="./script.js" defer></script>
   </head>
 
   <body>
+    <nav class="nav-bar" id="navId">
+        <div class="span-alignment" >
+            <span>Calculator</span>
+        </div>
+        <div>
+            <button class="toggle-btn" id="togglebtnId">
+                <div id="ballId" class="ball-btn"></div>
+            </button>
+        </div>
+    </nav>
     <div id="mainContainer" class="mainContainer">
       <div class="input-container">
         <input class="inputbox" type="text" readonly id="userinpt" />
         <input class="ouputbox" type="number" readonly id="answerinpt" />
       </div>
 
-      <div class="number-digit-container">
+      <div class="number-digit-container" id="numberdigitcontainer">
         <div id="digitsoperator" class="digits-and-operators"></div>
       </div>
     </div>

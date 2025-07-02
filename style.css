@@ -89,8 +89,14 @@ strong{
     color: blue;
     text-decoration: underline;
 }
-footer{
+footer {
+    width: 100%;
+    text-align: start;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    color: black;
+    background-color: transparent;
+    margin-top: 2rem;
     position: relative;
-    top: 20px;
-    left: 2%;
+    clear: both;
 }
